@@ -80,12 +80,12 @@ export default function TextForm(props) {
           </div>
           <div className='row'>
             <div className='col-md-12'>
-            <button disabled={text.length==0} className="btn btn-sm btn-primary my-2 mx-1" onClick={handleUpClick}>Convert to uppercase</button>
-            <button disabled={text.length==0} className="btn btn-sm btn-success my-2 mx-1" onClick={handleLowerClick}>Convert to lowercase</button>
-            <button disabled={text.length==0} className="btn btn-sm btn-danger my-2 mx-1" onClick={handleEmpClick}>Clear</button>
-            <button disabled={text.length==0} className="btn btn-sm btn-danger my-2 mx-1" onClick={handleExtraSpacesClick}>Remove extra spaces</button>
-            <button disabled={text.length==0} className="btn btn-sm btn-secondary my-2 mx-1" onClick={handleCopyClick} data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Copy to clipboard</button>
-            <button disabled={text.length==0} className="btn btn-sm btn-secondary my-2 mx-1" onClick={handleCapitalizeFirstLetterClick} >Capitalize first letter</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-primary my-3 mx-1" onClick={handleUpClick}>Convert to uppercase</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-success my-3 mx-1" onClick={handleLowerClick}>Convert to lowercase</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-danger my-3 mx-1" onClick={handleEmpClick}>Clear</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-danger my-3 mx-1" onClick={handleExtraSpacesClick}>Remove extra spaces</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-secondary my-3 mx-1" onClick={handleCopyClick} data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Copy to clipboard</button>
+            <button disabled={text.length==0} className="btn btn-sm btn-secondary my-3git  mx-1" onClick={handleCapitalizeFirstLetterClick} >Capitalize first letter</button>
              </div>
           </div>
         </div>
