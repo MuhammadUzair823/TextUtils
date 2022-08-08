@@ -67,7 +67,7 @@ export default function TextForm(props) {
     return (
         <>
         <div className="mb-3 container mt-3" style={{background: props.mode == 'dark' ? 'dark' : 'light'}}>
-        {/* <h1 className="text-center my-3 ">{props.headingText}</h1> */}
+         {/* <h1 className="text-center my-3 ">{props.headingText}</h1>  */}
         <div className='row mt-3'>
           <div className='col-md-6 '>
             <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.labelText}</label>
