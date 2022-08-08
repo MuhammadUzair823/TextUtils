@@ -6,11 +6,11 @@ import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm  from './Components/TextProgram';
 import Alerts  from './Components/Alert';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   const [mode,setMode] = useState("light");
@@ -38,22 +38,25 @@ function App() {
       document.body.style.background = 'white';
       document.body.style.color = 'black';
     }
+
   }
+  
   return (
     <>
-    {/* <Router > */}
+    <Router >
       <Navbar logoName="Text Utils" homeText = "Home" aboutText = "About" dropdownText = "Drop" child1 = "Action" child2 = "Another Action"
       child3 = "Something else here" disabledText = "Disabled" searchText = "Search" mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
-          {/* <Switch>
-            <Route  path="/about">
+          <Switch>
+            <Route path="/about" component={About} >
               <About mode={mode}/>
             </Route>
-            <Route  path="/"> */}
+            <Route  path="/">
               <TextForm headingText="Text Analyze Program" labelText="Enter the text to analyze below" mode={mode} showAlert={showAlert}/>
-            {/* </Route>
-          </Switch> */}
-    {/* </Router> */}
+            </Route>
+          </Switch>
+     </Router>
+      
     </>
   );
 }
